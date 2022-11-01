@@ -24,7 +24,6 @@ public class Main {
                     fuvarok.stream().count());
 
             //2. feladat
-            //fuvarok.stream().filter(fuvarok -> fuvarok.getTaxiAzonosito() == 6185).mapToDouble(Fuvar::getVetelDij)
             System.out.printf("\n6185 azonosítójú taxisnak %s volt a bevétele ez %d fuvarból állt",fuvarok.stream().filter(fuvarok -> fuvarok.getTaxiAzonosito() == 6185).mapToDouble(Fuvar::getBevetel).sum() ,
                     fuvarok.stream().filter(fuvarok -> fuvarok.getTaxiAzonosito() == 6185).count());
 
